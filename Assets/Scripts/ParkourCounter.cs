@@ -91,7 +91,7 @@ public class ParkourCounter : MonoBehaviour
                 part1Time = timeCounter;
                 part1Count = coinCount;
                 currentRespawnPos = first2SecondRespawn.position;
-                UpdateRecordText(1, part1Time, part1Count, 16);
+                UpdateRecordText(1, part1Time, part1Count, 15);
             }
             else if (locomotionTech.stage == secondBanner.name)
             {
@@ -120,7 +120,7 @@ public class ParkourCounter : MonoBehaviour
                 recordTextGO.SetActive(false);
                 endTextGO.SetActive(true);
                 endTextGO.GetComponent<TMP_Text>().text = "Parkour Finished!\n" + recordText.text +
-                    "\ntotal: " + timeCounter.ToString("F1") + ", " + coinCount.ToString() + "/69";
+                    "\ntotal: " + timeCounter.ToString("F1") + ", " + coinCount.ToString() + "/68";
                 Debug.Log(endTextGO.GetComponent<TMP_Text>().text);
                 endSoundEffect.Play();
             }
